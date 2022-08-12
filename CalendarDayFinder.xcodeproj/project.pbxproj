@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		34C78DFD28A52B6500FCEF0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C78DFC28A52B6500FCEF0D /* AppDelegate.swift */; };
 		34C78DFF28A52B6500FCEF0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C78DFE28A52B6500FCEF0D /* SceneDelegate.swift */; };
-		34C78E0128A52B6500FCEF0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C78E0028A52B6500FCEF0D /* ViewController.swift */; };
+		34C78E0128A52B6500FCEF0D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C78E0028A52B6500FCEF0D /* HomeViewController.swift */; };
 		34C78E0428A52B6500FCEF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C78E0228A52B6500FCEF0D /* Main.storyboard */; };
 		34C78E0628A52B6A00FCEF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C78E0528A52B6A00FCEF0D /* Assets.xcassets */; };
 		34C78E0928A52B6A00FCEF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C78E0728A52B6A00FCEF0D /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		34C78DF928A52B6500FCEF0D /* CalendarDayFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarDayFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C78DFC28A52B6500FCEF0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C78DFE28A52B6500FCEF0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		34C78E0028A52B6500FCEF0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		34C78E0028A52B6500FCEF0D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		34C78E0328A52B6500FCEF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		34C78E0528A52B6A00FCEF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C78E0828A52B6A00FCEF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		34C78DFB28A52B6500FCEF0D /* CalendarDayFinder */ = {
 			isa = PBXGroup;
 			children = (
-				34C78DFC28A52B6500FCEF0D /* AppDelegate.swift */,
-				34C78DFE28A52B6500FCEF0D /* SceneDelegate.swift */,
-				34C78E0028A52B6500FCEF0D /* ViewController.swift */,
-				34C78E0228A52B6500FCEF0D /* Main.storyboard */,
+				34C78E1128A52D0E00FCEF0D /* AppDelegate */,
+				34C78E1228A52D1B00FCEF0D /* Controller */,
+				34C78E1328A52D2600FCEF0D /* View */,
 				34C78E0528A52B6A00FCEF0D /* Assets.xcassets */,
-				34C78E0728A52B6A00FCEF0D /* LaunchScreen.storyboard */,
 				34C78E0A28A52B6A00FCEF0D /* Info.plist */,
 			);
 			path = CalendarDayFinder;
+			sourceTree = "<group>";
+		};
+		34C78E1128A52D0E00FCEF0D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				34C78DFC28A52B6500FCEF0D /* AppDelegate.swift */,
+				34C78DFE28A52B6500FCEF0D /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		34C78E1228A52D1B00FCEF0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				34C78E0028A52B6500FCEF0D /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		34C78E1328A52D2600FCEF0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34C78E0228A52B6500FCEF0D /* Main.storyboard */,
+				34C78E0728A52B6A00FCEF0D /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				34C78E0128A52B6500FCEF0D /* ViewController.swift in Sources */,
+				34C78E0128A52B6500FCEF0D /* HomeViewController.swift in Sources */,
 				34C78DFD28A52B6500FCEF0D /* AppDelegate.swift in Sources */,
 				34C78DFF28A52B6500FCEF0D /* SceneDelegate.swift in Sources */,
 			);
