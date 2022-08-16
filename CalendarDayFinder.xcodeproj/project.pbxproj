@@ -13,6 +13,8 @@
 		34C78E0428A52B6500FCEF0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C78E0228A52B6500FCEF0D /* Main.storyboard */; };
 		34C78E0628A52B6A00FCEF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C78E0528A52B6A00FCEF0D /* Assets.xcassets */; };
 		34C78E0928A52B6A00FCEF0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C78E0728A52B6A00FCEF0D /* LaunchScreen.storyboard */; };
+		34F6FEE628AB9A280016C26F /* DetailedDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FEE528AB9A280016C26F /* DetailedDayViewController.swift */; };
+		34F6FEE828ABA1100016C26F /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F6FEE728ABA1100016C26F /* AlertViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		34C78E0528A52B6A00FCEF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34C78E0828A52B6A00FCEF0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34C78E0A28A52B6A00FCEF0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34F6FEE528AB9A280016C26F /* DetailedDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedDayViewController.swift; sourceTree = "<group>"; };
+		34F6FEE728ABA1100016C26F /* AlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				34C78E0028A52B6500FCEF0D /* HomeViewController.swift */,
+				34F6FEE528AB9A280016C26F /* DetailedDayViewController.swift */,
+				34F6FEE728ABA1100016C26F /* AlertViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -165,6 +171,8 @@
 				34C78E0128A52B6500FCEF0D /* HomeViewController.swift in Sources */,
 				34C78DFD28A52B6500FCEF0D /* AppDelegate.swift in Sources */,
 				34C78DFF28A52B6500FCEF0D /* SceneDelegate.swift in Sources */,
+				34F6FEE828ABA1100016C26F /* AlertViewController.swift in Sources */,
+				34F6FEE628AB9A280016C26F /* DetailedDayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

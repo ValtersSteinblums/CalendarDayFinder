@@ -10,13 +10,9 @@ import UIKit
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var dayTextField: UITextField!
-    
     @IBOutlet weak var monthTextField: UITextField!
-    
     @IBOutlet weak var yearTextField: UITextField!
-    
     @IBOutlet weak var resultLabel: UILabel!
-    
     @IBOutlet weak var findButton: UIButton!
     
     
@@ -24,8 +20,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
     @IBAction func findWeekDayTapped(_ sender: Any) {
         let calendar = Calendar.current
         var dateComponents = DateComponents()
@@ -71,6 +66,13 @@ class HomeViewController: UIViewController {
         monthTextField.text = ""
         yearTextField.text = ""
         resultLabel.text = "Day of The Week, Inside Your Finder"
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detailedDateID" {
+            guard let vc = segue.destination as? DetailedDayViewController else {return}
+            vc.newDateFound = "\(resultLabel.text ?? "No data") is the day you were looking for!"
+        }
     }
     
     
